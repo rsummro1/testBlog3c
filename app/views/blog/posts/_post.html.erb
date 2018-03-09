@@ -1,0 +1,18 @@
+<div class='col-sm-6 col-lg-4'>
+  <div class="card-block">
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="https://static.pexels.com/photos/113762/pexels-photo-113762-large.jpeg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title"><%= link_to post.title, post %></h4>
+              <p class="published-date"><%= post.display_day_published %></p>
+              <p class="card-text"><%= truncate(post.description, lenght: 130) %></p>
+              <%= link_to 'Read', post, class: 'btn btn-read' %>
+    </div>
+  </div>
+</div>
+
+  
+  
+
+
+       
